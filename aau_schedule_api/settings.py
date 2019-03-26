@@ -50,6 +50,8 @@ REST_FRAMEWORK = {
     )
 }
 
+DEFAULT_IMAGE_PATH = 'images/custom_no_image.png'
+
 
 
 MIDDLEWARE = [
@@ -133,8 +135,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# CORS_ORIGIN_WHITELIST = (
-#     'craigslist-api-code-platoon//.herokuapp.com',
-# )
+CORS_ORIGIN_WHITELIST = (
+    'schedule-api-aau//.herokuapp.com',
+)
 
 django_heroku.settings(locals())
